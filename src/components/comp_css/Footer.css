@@ -1,0 +1,130 @@
+body {
+    margin: 0px;
+    padding-bottom: 0px;
+}
+
+.footer {
+    height: 4rem;
+    display: none;
+    /* Hide the footer by default */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: black;
+    transition: transform 0.3s ease;
+    /* Add a smooth transition for the slide-in effect */
+    transform: translateY(100%);
+    /* Move the footer below the viewport initially */
+    z-index: 99;
+
+    /* Add shadow above the footer */
+}
+
+
+.footer.show {
+    display: none;
+    /* Show the footer when .show class is applied */
+    transform: translateY(0);
+    /* Slide the footer back into view when .show class is applied */
+}
+
+
+
+.contact-info.call a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Remove underline */
+}
+
+/* all icon are here  */
+
+
+.both_icon {
+    margin-bottom: 5px;
+
+
+}
+
+.icon {
+    color: rgb(144, 140, 140);
+    font-size: 20px;
+
+
+}
+
+.icon:hover {
+    color: black;
+
+
+}
+
+.white_icon {
+    color: white;
+    font-size: 25px;
+    /* Customize the icon size */
+    /* margin-right: 3px; */
+    /* Add some space between the icon and the text */
+}
+
+
+
+.phone {
+    position: absolute;
+    /* top: .2em !important; */
+    left: 51%;
+    transform: translate(-50%, -50%) scale(1.2) !important;
+    bottom: -11px !important;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    background-color: black;
+    /* Add any other styles you want, like padding or box-shadow */
+    /* Optionally, you can add a box-shadow to give the circle some depth */
+    box-shadow: 0px 0px 8px rgba(246, 242, 242, 0.3), 0 0 2px rgba(0, 0, 0, 0.2);
+    border: 4px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* button:hover {
+    background-color: #0056b3;
+} */
+
+/* Responsive Styles for Mobile and Tablet */
+@media screen and (max-width: 900px) {
+    .footer.show {
+        /* Only show the footer on mobile and tablet screens */
+        display: flex;
+    }
+
+
+
+    .phone {
+        /* Modify the size and position of the circle for smaller screens */
+        width: 4rem;
+        height: 3rem;
+        bottom: 0.5rem;
+        box-shadow: 0px 0px 6px rgba(246, 242, 242, 0.3), 0 0 1px rgba(0, 0, 0, 0.2);
+    }
+
+}
+
+@media (max-width: 768px) {
+    .phone {
+        /* Further modify the size and position of the circle for smaller screens */
+        width: 3.5rem;
+        height: 3.5rem;
+        bottom: 0.2rem;
+        box-shadow: 0px 0px 4px rgba(246, 242, 242, 0.3), 0 0 1px rgba(0, 0, 0, 0.2);
+    }
+
+
+
+
+}

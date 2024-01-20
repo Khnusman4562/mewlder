@@ -1,0 +1,42 @@
+/* TestimonialPage.css */
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+} */
+
+
+
+
+
+.service-container {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+
+
+.testimonial {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+
+
+.comment {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-weight: bold;
+}

@@ -1,0 +1,39 @@
+/* RepairingInclude.css */
+
+.repairing-container {
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+
+}
+
+.icon_include {
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: rgb(9, 205, 9);
+    margin-bottom: 16px;
+}
+
+.note-container {
+    font-size: 15px;
+    margin-left: 25px;
+    margin-top: -9px;
+    text-align: left !important;
+    padding-bottom: 9px;
+}
+
+.note {
+    margin-left: 10px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    /* Increase the font size */
+    color: #333;
+    /* Change the text color */
+    text-align: left !important;
+
+    /* Add some spacing below the heading */
+}

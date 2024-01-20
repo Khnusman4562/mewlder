@@ -1,0 +1,169 @@
+/* AllRepairing.css */
+
+.image-scroll-box {
+    white-space: nowrap;
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    transition: transform 0.3s ease;
+    /* Add smooth transition for sliding effect */
+    scrollbar-width: thin;
+    cursor: pointer;
+
+    /* Remove default scrollbar for Firefox */
+    scrollbar-color: transparent transparent;
+    /* Remove default scrollbar for Firefox */
+}
+
+.image-scroll-box::-webkit-scrollbar {
+    width: 12px;
+    /* Adjust the width as needed */
+}
+
+.image-scroll-box::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* Set the thumb color to transparent */
+}
+
+.scroll-container {
+    flex: 0 0 auto;
+    width: 150px;
+    /* Adjust the width of each box as needed */
+    overflow: hidden;
+    border-radius: 8px;
+    /* Optional: Add border-radius for rounded corners */
+    margin-right: 5px;
+    /* Add margin to remove the sliding line effect */
+}
+
+
+.link {
+    text-decoration: none;
+    color: black;
+    margin-right: 5px;
+    cursor: pointer;
+
+    /* Adjust as needed for spacing between boxes */
+}
+
+
+
+.scroll-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    /* Add a smooth transition effect */
+}
+
+
+
+.box-info {
+    text-align: center;
+}
+
+
+
+/* Next and Previous Buttons */
+.buttons-container {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+}
+
+.arrow-button {
+    background-color: black;
+    /* Set initial background color */
+    color: white;
+    /* Set initial text color */
+    border: 1px solid #ccc;
+    border-radius: 29px;
+    padding: 8px;
+    cursor: pointer;
+    opacity: 1;
+    /* Set initial opacity */
+    transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+    /* Add opacity transition */
+}
+
+.arrow-button:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+
+    opacity: 1;
+    /* Set opacity on hover */
+}
+
+
+/* Responsive styles for mobile */
+
+
+
+/* For mobile devices */
+@media (max-width: 768px) {
+
+    .buttons-container {
+        display: none;
+    }
+
+    .scroll-container {
+        flex: 0 0 auto;
+        width: 150px;
+        /* Adjust the width of each box as needed */
+        overflow: hidden;
+        border-radius: 8px;
+        /* Optional: Add border-radius for rounded corners */
+    }
+
+    .title {
+        margin: 0;
+        font-size: 15px;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+}
+
+
+/* For desktop devices */
+@media (min-width: 768px) and (max-width: 1050px) {
+
+    .scroll-container {
+        flex: 0 0 auto;
+        width: 170px;
+        /* Adjust the width of each box as needed */
+        overflow: hidden;
+        border-radius: 8px;
+        /* Optional: Add border-radius for rounded corners */
+    }
+
+    .title {
+        margin: 0;
+        font-size: 18px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+    }
+
+}
+
+@media (min-width: 1051px) {
+    .scroll-container {
+        flex: 0 0 auto;
+        width: 180px;
+        /* Adjust the width of each box as needed */
+        overflow: hidden;
+        border-radius: 8px;
+        /* Optional: Add border-radius for rounded corners */
+    }
+
+    .title {
+        margin: 0;
+        color: black;
+        font-size: 18px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}

@@ -1,0 +1,46 @@
+/* Styling for the MoreService component */
+
+
+
+h1 {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.service-card {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.service-title {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.service-description {
+    text-align: center;
+    margin-top: 10px;
+}

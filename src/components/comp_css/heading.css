@@ -1,0 +1,123 @@
+/* Custom CSS for 3D background with shadow */
+
+
+
+h1 {
+  background-color: black;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out;
+  text-align: left !important;
+
+  /* Align text to the left */
+  margin-left: -60%;
+  /* Move the element to the left */
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+
+  /* Increase the font size */
+  color: #333;
+  /* Change the text color */
+  text-align: left !important;
+
+  /* Add some spacing below the heading */
+}
+
+
+
+
+
+
+/* this css is for recent project  */
+.card-img-top {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 3px 0px, rgba(27, 31, 45, 0.25) 0px 0px 0px 1px;
+  border-radius: 15px;
+}
+
+
+
+
+
+
+
+/* In your CSS file */
+.card-footer {
+  background-color: rgb(51, 110, 119);
+  color: white;
+
+}
+
+/* css for home.js */
+.home_service_area {
+  padding-bottom: 40px;
+}
+
+
+
+
+
+/* Styles for Mobile Devices (up to 768px) */
+@media (max-width: 767px) {
+  .mheight {
+    height: 310px;
+    width: 170px;
+  }
+
+  h1 {
+
+    margin-left: -90px;
+
+  }
+
+}
+
+/* Styles for Tablet Devices (769px to 1050px) */
+@media (min-width: 768px) and (max-width: 1050px) {
+  .mheight {
+    width: 300px;
+    height: 450px;
+  }
+}
+
+/* Styles for Laptop Devices (1051px and above) */
+@media (min-width: 1051px) {
+  .mheight {
+    width: 470px;
+    height: 530px;
+
+  }
+}
+
+
+
+
+
+
+/* css for quotes form  */
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-group {
+  display: flex;
+  gap: 5px;
+}
+
+.input-group input {
+  flex: 1;
+}

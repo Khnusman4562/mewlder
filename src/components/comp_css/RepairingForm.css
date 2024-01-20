@@ -1,0 +1,36 @@
+/* RepairingForm.css */
+
+.custom-input {
+    border: 1px solid #7aa1c8;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    background-color: #c4cdd6;
+    /* Background color for input fields */
+}
+
+.custom-checkbox-label {
+    font-weight: normal;
+}
+
+.custom-button {
+    background-color: #28a745;
+    /* Background color for the submit button */
+    border-color: #28a745;
+    color: #fff;
+    /* Text color for the button */
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #1e7e34;
+    /* Background color when hovering over the button */
+    border-color: #1e7e34;
+}
+
+.custom40 {
+    height: 40px;
+    /* Adjust the height as needed */
+    vertical-align: middle;
+
+}

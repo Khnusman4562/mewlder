@@ -1,0 +1,23 @@
+.button4 {
+    background-color: white;
+    color: black;
+    padding: 5px 11px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* Added box-shadow to the transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Box shadow values (adjust as needed) */
+}
+
+.button4:hover {
+    background-color: #e0e0e0;
+    /* Change the background color on hover (adjust as needed) */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Adjust box shadow values on hover */
+}

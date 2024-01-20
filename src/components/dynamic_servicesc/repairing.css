@@ -1,0 +1,293 @@
+.option {
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    /* transition: border 0.3s ease-in-out; */
+}
+
+.options-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+
+}
+
+.option.selected {
+    border-radius: 10px;
+    border: 1px solid rgb(175, 188, 184);
+    margin-left: 4px;
+    box-shadow: 2px 0px 2px rgba(174, 170, 170, 0.5);
+    /* Adjusted shadow properties for a darker, book-like effect */
+}
+
+
+
+
+
+
+
+.options-wrapper {
+    display: flex;
+
+}
+
+
+
+
+
+.small-text {
+    font-weight: bolder;
+}
+
+.newbtn {
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 16px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 3px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* Added box-shadow to the transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+
+    /* Box shadow values (adjust as needed) */
+
+}
+
+.newbtn:hover {
+    background-color: #e0e0e0;
+    /* Change the background color on hover (adjust as needed) */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.238);
+
+}
+
+.transparent_btn {
+    background-color: transparent;
+    color: black;
+    /* Text color */
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 1px solid black;
+    /* Adding a black border */
+    border-radius: 12px;
+    transition: background-color 0.3s;
+}
+
+.fix_icon {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 7px;
+}
+
+
+
+
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .right {
+
+        margin-left: 15px;
+
+    }
+
+    .fix_icon {
+        width: 140px;
+    }
+
+    .newbtn {
+        font-size: 15px;
+
+    }
+
+    .options-container {
+        justify-content: flex-start;
+        /* Align content to the start for smaller screens */
+    }
+
+    .option .option_image {
+        width: 115px;
+        border-radius: 10px;
+        margin: 0px 3px 0px 2px;
+        /* margin-bottom: 1rem; */
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .service_title {
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: 1rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+
+    .small-text {
+        font-size: 12px;
+        font-weight: bolder;
+    }
+
+    .paragraph {
+        font-size: 12px;
+    }
+
+
+}
+
+
+/* For desktop devices */
+@media (min-width: 768px) and (max-width: 1050px) {
+    .right {
+
+        margin-left: 15px;
+
+    }
+
+    .fix_icon {
+        width: 160px;
+    }
+
+    .options-container {
+        justify-content: flex-start;
+        /* Align content to the start for smaller screens */
+    }
+
+    .option .option_image {
+        width: 200px;
+        border-radius: 10px;
+        margin: 0px 3px 0px 2px;
+
+        /* margin-left: 8px; */
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .service_title {
+        font-size: 19px;
+        font-weight: normal;
+
+        margin-bottom: 1rem;
+        font-family: unset;
+    }
+
+
+}
+
+@media (min-width: 1051px) {
+    .right {
+
+        margin-left: 40px;
+
+    }
+
+    .fix_icon {
+        width: 300px;
+
+    }
+
+    .option .option_image {
+        width: 200px;
+        border-radius: 10px;
+        margin-left: 8px;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .service_title {
+        font-size: 20px;
+        font-weight: normal;
+
+        margin-bottom: 1rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+
+}
+
+
+
+/* css for form component  */
+
+.curd {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+
+
+/* This CSS assumes a class name of 'selected-options-card' for the surrounding div */
+
+.selected-options-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.selected-options-card h4 {
+    margin-bottom: 10px;
+}
+
+.selected-options-card ul {
+    list-style: none;
+    /* Removes default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.selected-options-card li {
+    margin-bottom: 5px;
+    /* Add additional styles as needed */
+}
+
+
+/* Add this CSS to your form componentcss  */
+.remove-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remove-btn::before {
+    content: 'X';
+}
